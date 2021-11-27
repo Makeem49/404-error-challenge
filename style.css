@@ -1,0 +1,139 @@
+*::after, *::before, * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #333333;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 2em;
+}
+
+nav {
+    font-weight: 500;
+    color: #fff;
+}
+
+main {
+    word-spacing: 10px;
+    color: #ffff;
+}
+
+.main-image {
+    width: 100%;
+    margin: 3em 0;
+}
+
+.main-text {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-top: 2.5em;
+    initial-letter: 5px;
+    line-height: 1.3rem;
+    color: grey;
+}
+
+#btn-homepage {
+    width: 70%;
+    display: block;
+    background-color: #ffff;
+    padding: 16px;
+    text-transform: uppercase;
+    margin-top: 7em;
+    border-radius: 0;
+    font-size: 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+#btn-homepage:hover {
+    background-color: grey;
+    box-shadow: 1px 1px solid 10px;
+}
+
+#username {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    margin : 0.5em 1em;
+    bottom: 0;
+    text-align: center;
+}
+
+#footer-text{
+    font-size: 0.9rem;
+}
+
+
+@media screen and (min-width : 560px ) {
+
+    .container{
+        padding: 3em;
+    }
+    
+
+   main {
+        width: 70%;
+        margin: 5em auto;   
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap : 40px;
+   }
+
+   h1 {
+       word-spacing: 1em;
+   }
+
+   .main-text__content{
+       width: 40vh;
+       max-width: 40vh;
+   }
+
+   img {
+    width: 40vh;
+    max-width: 40vh;
+    }
+    .main-image {
+        align-self: baseline;
+    }
+
+    .main-image{
+        width: 90%;
+    }
+
+   .main-text {
+       align-self: flex-start;
+   }
+
+   #btn-homepage  {
+       width: 40%;
+   }
+/* 
+   footer {
+       position: relative;
+       bottom: 0;
+       left: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0 ;
+   } */
+}
